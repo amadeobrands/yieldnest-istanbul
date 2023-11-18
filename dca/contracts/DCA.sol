@@ -33,7 +33,7 @@ contract DCA {
     address public buyToken;
     address public sellToken;
 	uint256 public sellAmount = 0.1 ether; // sell 0.1 wxDAI at a time
-
+    uint public minTimeBetweenBuys = 20 seconds;
 
     // danger
     address constant public oneInch = 0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1;
@@ -59,7 +59,7 @@ contract DCA {
 
     function buy() public {
         //require(msg.sender == owner, "Not owner");
-        if (block.timestamp - lastTimeSwapped < 20 seconds) {
+        if (block.timestamp - lastTimeSwapped < minTimeBetweenBuys) {
             // Just do nothing if we are called too fast
             return;
         }
@@ -84,6 +84,17 @@ contract DCA {
         emit Buy(amountOut, block.timestamp);
     }
 
+    /**
+    * Powerpool predicate to check if it's ready for a new investment
+    *
+    */
+    function shouldBuy() external view returns (bool _shouldBuy, bytes memory cdata) {
+
+        _shouldBuy = block.timestamp - lastTimeSwapped > minTimeBetweenBuys;
+
+        cdata = abi.encodeWithSelector(DCA(address(this)).buy.selector);
+    }
+
     //function withdraw() public {
         // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
         // console.log("Unlock time is %o and block timestamp is %o", unlockTime, block.timestamp);
@@ -93,8 +104,7 @@ contract DCA {
     //    owner.transfer(address(this).balance);
     //}
 
-
-/// sushiswap
+    /// sushiswap
     address private constant UNISWAP_V2_ROUTER =
         0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506; // GnosisChain sushiswap router
 
@@ -129,7 +139,5 @@ contract DCA {
         // amounts[0] = DAI amount, amounts[1] = WETH amount
         return amounts[1];
     }
-/// sushiswap end
-
-
+    /// sushiswap end
 }

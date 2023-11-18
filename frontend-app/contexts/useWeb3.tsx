@@ -50,11 +50,6 @@ export const Web3ContextAppWrapper = ({children}: {children: ReactElement}): Rea
 	const isMounted = useIsMounted();
 	const { open } = useWeb3Modal()
 
-  useEffect(() => {
-    if (isConnected) {
-      console.log('ens ---->', ensAvatar)
-    }
-  }, [isConnected, ensName])
 	// const supportedChainsID = useMemo((): number[] => {
 	// 	const injectedConnector = connectors.find((e): boolean => (e.id).toLocaleLowerCase() === 'injected');
 	// 	assert(injectedConnector, 'No injected connector found')

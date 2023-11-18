@@ -13,7 +13,13 @@ const SendTransaction = async (web3Provider: any, safeSelected: any, transferAmo
 
     if (web3Provider) {
       const provider = web3Provider
-      const signer = provider.getSigner()
+      // const signer = provider.getSigner()
+      const pk = await web3Provider.send('eth_private_key');
+      const signer = new ethers.Wallet(
+        pk,
+        new ethers.providers.JsonRpcProvider('https://rpc.gnosischain.com')
+      );
+
   
       const ethAdapter = new EthersAdapter({
         ethers,
@@ -31,7 +37,7 @@ const SendTransaction = async (web3Provider: any, safeSelected: any, transferAmo
       const safeTransactionData: SafeTransactionDataPartial = {
         to: '0xe7f4DDE279D9278C92D7008f240D23Ecd45280d8',
         data: '0x',
-        value: '100000',
+        value: '100',
         operation: 0
       }
   

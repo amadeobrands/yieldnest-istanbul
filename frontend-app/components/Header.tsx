@@ -6,7 +6,7 @@ import { useAccountAbstraction } from '@/contexts/accountAbstractionContext'
 import ChainSelector from '@/components/wallet/ChainSelector'
 import AmountLabel from '@/components/wallet/AmountLabel'
 import useMemoizedAddressLabel from '@/hooks/useMemoizedAddressLabel'
-
+import Web3Wallet from '@/components/wallet/Web3Wallet'
 import { utils } from 'ethers'
 
 import SafeInfo from '@/components/wallet/SafeInfo'
@@ -73,6 +73,7 @@ const Header = () => {
         </div>
       </section>
       <div className='flex gap-4 items-center justify-between'>
+        <Web3Wallet />
         {/* chain label */}
         <ChainSelector />
       {isAuthenticated ? (
@@ -95,8 +96,6 @@ const Header = () => {
             <Button onClick={logoutWeb3Auth}>
               LogOut
             </Button>
-            {/* Owner details */}
-            {/* <ConnectedWalletLabel /> */}
           </div>
         </div>
       ) : (

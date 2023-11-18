@@ -5,8 +5,8 @@ import type { Chain } from './chains'
 export type TWeb3Context = {
 	address: TAddress | undefined,
 	ens: string | undefined,
-	chainId: string | undefined,
-  chain?: Chain
+  ensAvatar: string | null,
+	chainID: number,
 	isDisconnected: boolean,
 	isActive: boolean
 	isConnecting: boolean,

@@ -34,6 +34,7 @@ contract DCA {
     address public sellToken;
 	uint256 public sellAmount = 0.1 ether; // sell 0.1 wxDAI at a time
     uint public minTimeBetweenBuys = 20 seconds;
+    uint public executionCount;
 
     // danger
     address constant public oneInch = 0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1;
@@ -79,7 +80,8 @@ contract DCA {
         uint amountOut = swapSingleHopExactAmountIn(sellAmount, 0.00001 ether);
 
         lastTimeSwapped = block.timestamp;
-        
+
+        executionCount++;
 
         emit Buy(amountOut, block.timestamp);
     }

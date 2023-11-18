@@ -43,7 +43,6 @@ const SendTransaction = async (web3Provider: any, safeSelected: any, transferAmo
   
       try {
         const safeTransaction =  await safeSDK.createTransaction({ safeTransactionData })
-        // console.log("execute ", safeSDK.executeTransaction(safeTransaction, {gasLimit: 1000000}))
         const txResult = await safeSDK.executeTransaction(safeTransaction)
         console.log(txResult)       
         const txRes = await txResult.transactionResponse?.wait()

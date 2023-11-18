@@ -97,7 +97,7 @@ export function NetworkSelector({networks}: {networks: number[]}): ReactElement 
 			return <NetworkButton label={'Localhost'} isDisabled />;
 		}
 		if (currentNetwork?.value === supportedNetworks[0]?.value) {
-			return <NetworkButton label={supportedNetworks[0]?.label || 'Ethereum'} isDisabled />;
+			return <NetworkButton label={supportedNetworks[0]?.label} isDisabled />;
 		}
 		return (
 			<NetworkButton
@@ -155,7 +155,7 @@ export function NetworkSelector({networks}: {networks: number[]}): ReactElement 
                           <div
                             data-active={active}
                             className={'cursor-pointer py-1 text-sm'}>
-                            {network?.label || 'Ethereum'}
+                            {network?.label}
                           </div>
 														
 													)}
@@ -184,7 +184,6 @@ function	WalletSelector(): ReactElement {
 		if (!isActive && address) {
 			set_walletIdentity('Invalid Network');
 		} else if (ens) {
-      console.log('ensAvatar --->', ensAvatar)
 			set_walletIdentity(ens);
 		} else if (address) {
 			set_walletIdentity(truncateHex(address, 4));

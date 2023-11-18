@@ -4,7 +4,8 @@ const NavLinks = () => {
 
   const menuItems = [
     { title: 'Home', path: '/' },
-    { title: 'Vaults', path: '/vaults' },
+    { title: 'Spark', path: '/spark' },
+    { title: 'Notifications', path: 'https://app.obscurity.org/', target: '_blank' },
   ]
 
   return (
@@ -18,7 +19,7 @@ const NavLinks = () => {
                 href={item.path}
                 aria-label={`Link to ${item.title} page`}
                 className="py-1 text-xl text-foreground transition-colors hover:text-secondary lg:py-0"
-                // target={item.target ? item.target : ''}
+                target={item.target ? item.target : ''}
               >
                 {item.title}
               </Link>

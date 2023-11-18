@@ -6,8 +6,8 @@ import { useWeb3Modal, createWeb3Modal, defaultWagmiConfig } from '@web3modal/wa
 import { useIsMounted, useUpdateEffect}  from '@react-hookz/web'
 
 
-import { useAccount, useConnect, useDisconnect, useEnsName, useEnsAvatar, useNetwork, usePublicClient, useSwitchNetwork, useWalletClient, WagmiConfig } from 'wagmi'
-import { mainnet, goerli, polygonZkEvmTestnet, mantleTestnet, lineaTestnet, arbitrumGoerli } from 'viem/chains'
+import { useAccount, useDisconnect, useEnsName, useEnsAvatar, useNetwork, usePublicClient, useSwitchNetwork, useWalletClient, WagmiConfig } from 'wagmi'
+import { mainnet, gnosis, goerli, polygonZkEvmTestnet, mantleTestnet, lineaTestnet, arbitrumGoerli } from 'viem/chains'
 import { toAddress } from '@/utils/address'
 
 import type { TWeb3Context } from '@/types/contexts'
@@ -16,7 +16,7 @@ const defaultState = {
 	address: undefined,
 	ens: undefined,
   ensAvatar: null,
-	chainID: 1,
+	chainID: 100,
 	isDisconnected: false,
 	isActive: false,
 	isConnecting: false,
@@ -121,7 +121,7 @@ const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
 
-const chains = [mainnet, goerli, mantleTestnet, lineaTestnet, arbitrumGoerli, polygonZkEvmTestnet]
+const chains = [mainnet, gnosis, goerli, mantleTestnet, lineaTestnet, arbitrumGoerli, polygonZkEvmTestnet]
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata })
 
 // 3. Create modal

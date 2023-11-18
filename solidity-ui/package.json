@@ -30,7 +30,8 @@
     "test:coverage": "forge coverage",
     "test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage",
     "deploy:goerli": "source .env && forge script Deploy --broadcast --rpc-url \"$GOERLI_RPC_URL\" --private-key=$PRIVATE_KEY --verify",
-    "deploy:gnosis-mainnet": "source .env && forge script Deploy --broadcast --rpc-url \"$GNOSIS_MAINNET_RPC_URL\" --private-key=$PRIVATE_KEY --etherscan-api-key $GNOSIS_SCAN_API_KEY --verify"
+    "deploy:gnosis-mainnet": "source .env && forge script Deploy --broadcast --rpc-url \"$GNOSIS_MAINNET_RPC_URL\" --private-key=$PRIVATE_KEY --etherscan-api-key $GNOSIS_SCAN_API_KEY --verify",
+    "deploy-aaveui:gnosis-mainnet": "source .env && forge script DeployAaveUI --broadcast --rpc-url \"$GNOSIS_MAINNET_RPC_URL\" --private-key=$PRIVATE_KEY --etherscan-api-key $GNOSIS_SCAN_API_KEY --verify"
   },
   "dependencies": {
     "solhint": "^3.6.2"

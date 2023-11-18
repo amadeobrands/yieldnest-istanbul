@@ -1,0 +1,5 @@
+export const CONFIG = {
+  PUBLIC_KEY:
+    'BHsedE_a7-3qQXMpn39AguCBjcf926ZDp9hyZkb3WNWl6VjJK8Ep4xKJBEQJM8Bq70MoIlwPcjcx_BKkh15ct3Q',
+  PRIVATE_KEY: '2JqDVu930nKaLKfMxdMBhnAi3T-N62qCJVg3GuKYrrg',
+}

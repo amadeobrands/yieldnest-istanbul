@@ -1,0 +1,35 @@
+{
+  "name": "example-dev",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen": "wagmi generate",
+    "gen:watch": "wagmi generate --watch"
+  },
+  "dependencies": {
+    "@types/web-push": "^3.6.3",
+    "@web3inbox/widget-react": "^0.6.25",
+    "lokijs": "^1.5.12",
+    "next": "^12.2.0",
+    "pino-pretty": "^10.2.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "viem": "^1.0.0",
+    "wagmi": "workspace:*",
+    "web-push": "^3.6.6"
+  },
+  "devDependencies": {
+    "@preconstruct/next": "^4.0.0",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "@wagmi/cli": "workspace:*",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "typescript": "^5.0.4"
+  }
+}

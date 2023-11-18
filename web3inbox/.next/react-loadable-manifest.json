@@ -1,0 +1,88 @@
+{
+  "../../../../node_modules/.pnpm/@walletconnect+ethereum-provider@2.10.2_@walletconnect+modal@2.6.2/node_modules/@walletconnect/ethereum-provider/dist/index.es.js -> @walletconnect/modal": {
+    "id": "../../../../node_modules/.pnpm/@walletconnect+ethereum-provider@2.10.2_@walletconnect+modal@2.6.2/node_modules/@walletconnect/ethereum-provider/dist/index.es.js -> @walletconnect/modal",
+    "files": [
+      "static/chunks/node_modules_pnpm_walletconnect_modal_2_6_2_react_18_2_0_node_modules_walletconnect_modal_dis-78b4e6.js"
+    ]
+  },
+  "../../../../node_modules/.pnpm/@walletconnect+modal@2.6.2_react@18.2.0/node_modules/@walletconnect/modal/dist/index.js -> @walletconnect/modal-ui": {
+    "id": "../../../../node_modules/.pnpm/@walletconnect+modal@2.6.2_react@18.2.0/node_modules/@walletconnect/modal/dist/index.js -> @walletconnect/modal-ui",
+    "files": [
+      "static/chunks/node_modules_pnpm_walletconnect_modal-ui_2_6_2_react_18_2_0_node_modules_walletconnect_modal--9e1ff6.js"
+    ]
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/actions/public/call.js -> ../../utils/ccip.js",
+    "files": []
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/utils/rpc.js -> isomorphic-ws": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/utils/rpc.js -> isomorphic-ws",
+    "files": [
+      "static/chunks/node_modules_pnpm_isomorphic-ws_5_0_0_ws_8_12_0_node_modules_isomorphic-ws_browser_js.js"
+    ]
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/cjs/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": [
+      "static/chunks/node_modules_pnpm_noble_curves_1_0_0_node_modules_noble_curves_esm_secp256k1_js.js"
+    ]
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": []
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/utils/rpc.js -> isomorphic-ws": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/utils/rpc.js -> isomorphic-ws",
+    "files": [
+      "static/chunks/node_modules_pnpm_isomorphic-ws_5_0_0_ws_8_12_0_node_modules_isomorphic-ws_browser_js.js"
+    ]
+  },
+  "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "../../../../node_modules/.pnpm/viem@1.0.0_typescript@5.0.4_zod@3.21.4/node_modules/viem/dist/esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": [
+      "static/chunks/node_modules_pnpm_noble_curves_1_0_0_node_modules_noble_curves_esm_secp256k1_js.js"
+    ]
+  },
+  "../../../../packages/connectors/src/coinbaseWallet.ts -> @coinbase/wallet-sdk": {
+    "id": "../../../../packages/connectors/src/coinbaseWallet.ts -> @coinbase/wallet-sdk",
+    "files": [
+      "static/chunks/node_modules_pnpm_coinbase_wallet-sdk_3_6_6_node_modules_coinbase_wallet-sdk_dist_index_js.js"
+    ]
+  },
+  "../../../../packages/connectors/src/walletConnect.ts -> @walletconnect/ethereum-provider": {
+    "id": "../../../../packages/connectors/src/walletConnect.ts -> @walletconnect/ethereum-provider",
+    "files": [
+      "static/chunks/node_modules_pnpm_walletconnect_ethereum-provider_2_10_2__walletconnect_modal_2_6_2_node_modu-6f7efb.js"
+    ]
+  },
+  "../../../../packages/connectors/src/walletConnectLegacy.ts -> @walletconnect/legacy-provider": {
+    "id": "../../../../packages/connectors/src/walletConnectLegacy.ts -> @walletconnect/legacy-provider",
+    "files": [
+      "static/chunks/node_modules_pnpm_walletconnect_legacy-provider_2_0_0_node_modules_walletconnect_legacy-provi-0445ca.js"
+    ]
+  },
+  "../../../../packages/core/src/actions/ens/fetchEnsAddress.ts -> viem/ens": {
+    "id": "../../../../packages/core/src/actions/ens/fetchEnsAddress.ts -> viem/ens",
+    "files": [
+      "static/chunks/node_modules_pnpm_viem_1_0_0_typescript_5_0_4_zod_3_21_4_node_modules_viem_dist_esm_ens_js.js"
+    ]
+  },
+  "../../../../packages/core/src/actions/ens/fetchEnsAvatar.ts -> viem/ens": {
+    "id": "../../../../packages/core/src/actions/ens/fetchEnsAvatar.ts -> viem/ens",
+    "files": [
+      "static/chunks/node_modules_pnpm_viem_1_0_0_typescript_5_0_4_zod_3_21_4_node_modules_viem_dist_esm_ens_js.js"
+    ]
+  },
+  "../../../../packages/core/src/actions/ens/fetchEnsResolver.ts -> viem/ens": {
+    "id": "../../../../packages/core/src/actions/ens/fetchEnsResolver.ts -> viem/ens",
+    "files": [
+      "static/chunks/node_modules_pnpm_viem_1_0_0_typescript_5_0_4_zod_3_21_4_node_modules_viem_dist_esm_ens_js.js"
+    ]
+  },
+  "index.tsx -> ../components/Notifications": {
+    "id": "index.tsx -> ../components/Notifications",
+    "files": [
+      "static/chunks/src_components_Notifications_tsx.js"
+    ]
+  }
+}

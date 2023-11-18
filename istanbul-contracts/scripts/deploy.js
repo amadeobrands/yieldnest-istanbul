@@ -7,6 +7,8 @@ async function main() {
     const AutoDCA = await ethers.getContractFactory("AutoDCA");
     const autoDCA = await AutoDCA.deploy(); // Add constructor arguments if needed
 
+    console.log('autoDCA', autoDCA)
+
     console.log("AutoDCA address:", autoDCA.address);
 }
 

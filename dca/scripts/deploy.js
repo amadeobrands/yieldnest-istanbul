@@ -33,11 +33,22 @@ async function main() {
     sellToken = "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d";
   }
 
+  const constructorArguments = [buyToken, sellToken];
+
   // The main contract
-  const dca = await hre.ethers.deployContract("DCA", [buyToken, sellToken]);
+  const dca = await hre.ethers.deployContract("DCA", constructorArguments);
   await dca.waitForDeployment();
 
   console.log(`DCA deployed to ${dca.target} with buy ${buyToken} and sell ${sellToken}`);
+
+  console.log('Verifying contract.')
+
+  await hre.run("verify:verify", {
+    address: dca.target,
+    constructorArguments: constructorArguments,
+  });
+
+  console.log('Done!');
 }
 
 // We recommend this pattern to be able to use async/await everywhere

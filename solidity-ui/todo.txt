@@ -1,0 +1,18 @@
+[x] base test
+[x] deploy local node
+[x] landing page welcome to spark
+dai balance
+sdai balance
+deposit dai
+withdraw sdai
+[x] click deposit dai
+actually deposit dai (sign tx)
+refresh balance
+[x] deploy to goerli
+[ ] integrate ENS subdomain
+spark.solidityui.ens
+[ ] aave integration https://gho.aave.com/?marketName=proto_goerli_gho_v3
+supply ETH
+borrow GHO
+[ ] write doc and list tx
+[ ] look into alternative network deployments

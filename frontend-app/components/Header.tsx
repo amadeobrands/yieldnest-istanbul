@@ -2,17 +2,31 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect, useMemo, Fragment } from 'react'
+import { useAccountAbstraction } from '@/contexts/accountAbstractionContext'
+import ChainSelector from '@/components/wallet/ChainSelector'
+import AmountLabel from '@/components/wallet/AmountLabel'
+import useMemoizedAddressLabel from '@/hooks/useMemoizedAddressLabel'
+
+import { utils } from 'ethers'
+
+import SafeInfo from '@/components/wallet/SafeInfo'
+import SafeAccount from '@/components/wallet/SafeAccount'
+import ConnectedWalletLabel from '@/components/wallet/ConnectedWalletLabel'
+
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 import NavLinks from './NavLinks'
 import MobileMenu from './MobileMenu'
-
-import { cn } from '@/lib/utils'
 
 import ynIcon from '@/public/yn-icon.svg'
 import ynLogo from '@/public/yieldnest-dark.svg'
 
 
 const Header = () => {
+
+  const { isAuthenticated, loginWeb3Auth, logoutWeb3Auth, safeSelected, chainId, safeBalance, chain } = useAccountAbstraction()
+  const addressLabel = useMemoizedAddressLabel(safeSelected ? safeSelected : '')
 
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -48,20 +62,50 @@ const Header = () => {
         <div className='flex gap-4 lg:hidden'>
           <MobileMenu />
           <Link href='/'>
-            Home
             <Image alt='logo' className='block lg:hidden h-8 w-auto' src={ynIcon} />
           </Link>
         </div>
         <div className='hidden lg:flex lg:gap-6 lg:items-center'>
           <Link href='/'>
-            Home
             <Image alt='logo' className='hidden lg:block h-8 w-auto' src={ynLogo} />
           </Link>
           <NavLinks />
         </div>
       </section>
       <div className='flex gap-4 items-center justify-between'>
-        <button>Wallet</button>
+        {/* chain label */}
+        <ChainSelector />
+      {isAuthenticated ? (
+        <div className="flex gap-2 items-center">
+          {safeBalance && (
+          <div className="flex flex-col">
+            {/* Safe address */}
+            <p>{addressLabel}</p>
+            {/* Safe Balance */}
+            <p className='font-bold'>
+              <AmountLabel
+                amount={utils.formatEther(safeBalance || '0')}
+                tokenSymbol={chain?.token || ''}
+              />
+            </p>
+          </div>
+        )}
+          {/* owner ID */}
+          <div className='flex'>
+            <Button onClick={logoutWeb3Auth}>
+              LogOut
+            </Button>
+            {/* Owner details */}
+            {/* <ConnectedWalletLabel /> */}
+          </div>
+        </div>
+      ) : (
+        <div className='flex flex-col items-center gap-2'>
+          <Button onClick={loginWeb3Auth}>
+            Connect
+          </Button>
+        </div>
+      )}
       </div>
     </header>
   )

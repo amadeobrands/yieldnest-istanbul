@@ -1,11 +1,11 @@
 # yieldnest-istanbul
  YieldNest streamlines decentralized finance (DeFi) with a unified GUI, offering account abstraction, self-custody, and modularity.
-
+ 
+[See here a link to our pitchdeck](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/YieldNest%20__%20Istanbul%20V0.2.pdf)
 
 ## YieldNest Core Design
 
 Decentralized Finance (DeFi) is a growing sector promising transparent and independent financial empowerment worldwide. However, its complexity, including intricate cryptography, poses challenges for users. YieldNest simplifies this by offering a user-friendly, modular interface for DeFi, enhancing risk management and ensuring privacy and ownership. Our platform, available as a progressive web app, provides personalized experiences and robust security, allowing users to manage private keys securely. YieldNest's approach minimizes risks and offers a degree of self-custody beyond traditional banking, by constructing decentralized layers atop core DeFi infrastructure.
-
 
 ![1](./assets/YieldNest%20Core%20Design.png)
 

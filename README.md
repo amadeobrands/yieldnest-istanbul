@@ -4,16 +4,24 @@
 [See here a link to our pitchdeck](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/YieldNest%20__%20Istanbul%20V0.2.pdf)
 
 ## YieldNest Core Design
-
-Decentralized Finance (DeFi) is a growing sector promising transparent and independent financial empowerment worldwide. However, its complexity, including intricate cryptography, poses challenges for users. YieldNest simplifies this by offering a user-friendly, modular interface for DeFi, enhancing risk management and ensuring privacy and ownership. Our platform, available as a progressive web app, provides personalized experiences and robust security, allowing users to manage private keys securely. YieldNest's approach minimizes risks and offers a degree of self-custody beyond traditional banking, by constructing decentralized layers atop core DeFi infrastructure.
-
+Decentralized Finance (DeFi) is a growing sector promising transparent and independent financial empowerment worldwide. However, its complexity, including intricate cryptography, poses challenges for users. YieldNest simplifies this by offering a user-friendly, modular interface for DeFi, enhancing risk management and ensuring privacy and ownership. Our platform, available as a progressive web app, provides personalized experiences and robust security, allowing users to manage private keys securely. YieldNest's approach minimizes risks and offers a degree of self-custody beyond traditional banking by constructing decentralized layers atop core DeFi infrastructure.
 ![1](./assets/YieldNest%20Core%20Design.png)
 
+## Account abstraction
+![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/Account%20abstraction-%20YN.png)
 
+## DCA Module
+
+
+## Liquidation Protection Module
+![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/Liquidation%20Protection%20Module%20-%20YN.png)
+
+
+
+## Push Notifications
 
 
 ## Solidity Terminal Module
-
 Simplify and Unify user interfaces, pulled directly from the blockchain, no DNS involved.
 
 ### Spark UI Terminal Module

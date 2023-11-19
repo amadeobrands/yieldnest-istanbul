@@ -11,15 +11,13 @@ Decentralized Finance (DeFi) is a growing sector promising transparent and indep
 ![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/Account%20abstraction-%20YN.png)
 
 ## DCA Module
-
+![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/DCA%20Strat.png)
 
 ## Liquidation Protection Module
 ![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/Liquidation%20Protection%20Module%20-%20YN.png)
 
-
-
 ## Push Notifications
-
+![1](https://github.com/amadeobrands/yieldnest-istanbul/blob/main/assets/Push%20strat.png)
 
 ## Solidity Terminal Module
 Simplify and Unify user interfaces, pulled directly from the blockchain, no DNS involved.
